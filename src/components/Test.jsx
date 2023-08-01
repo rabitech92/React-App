@@ -1,21 +1,39 @@
 import React, { Component } from 'react';
 import "./assets/Test.css" 
-const name = "Rabiul islam"
+//const name = "Rabiul islam"
 
 class Test extends Component {
 
-    state ={
-        name:"Sinha islam",
-        age:29,
-        nid :12312958742,
-    } 
+    // state ={
+    //     name:"Sinha islam",
+    //     age:29,
+    //     nid :12312958742,
+    // }
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+    //         name:"Sinha Sardar",
+    //         age:19,
+    //         nid:{
+    //             nid1:123456, //nested state
+    //             nid2:456789,
+    //             nid3:789456,
+    //         }
+    //     }
+    // }
+    // changeValue(){
+    //     this.setState(
+    //         {
+    //             nid :1598475326951,
+    //         }
+    //     )
+    // }
+
     render() {
         return (
             <div className='test'> 
-            {/* <h1>{this.props.name}</h1> */}
-                <h1>{"My name is "+ this.state.name +"and my age "+ this.state.age +" nid number "+ this.state.nid}</h1>
-                
-                
+            <h1>I am from Test</h1>
+            
             </div>
         );
     }
