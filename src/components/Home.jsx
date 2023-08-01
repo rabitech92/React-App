@@ -1,7 +1,8 @@
 import React from 'react'
+import About from './About'
 import "./assets/Home.css"
 
-export function Home(props) {
+export function Home() {
     
 
     return (
@@ -9,7 +10,11 @@ export function Home(props) {
         <div>
            
             <div className='home'>
-                <h1>Health Managment System</h1>
+                <About name="Rabiul islam " address =" GopalGonj"/>
+                <About name="Sinha islam " address =" GopalGonj"/>
+                <About name="Nirob islam " address =" GopalGonj"/>
+                <About name="Jamal islam " address =" Faridpur"/>
+                <About name="Kamal islam " address =" Nowgati"/>
             </div>
       </div>
     )

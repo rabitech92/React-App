@@ -7,8 +7,9 @@
     text-align: center;
 }
 
-.user{
+.userNav{
     color: black;
     display: flex;
-    text-decoration: underline;
+    flex-direction: row-reverse;
+
 }

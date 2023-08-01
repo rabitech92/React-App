@@ -13,9 +13,11 @@ export function Header(props) {
                     <ul><Link to={"/home"}>Home</Link></ul>
                     <ul><Link to={"/about"}>About</Link></ul>
                     <ul><Link to={"/contact"}>Contact</Link></ul>
+                    
 
-                    <div className="user">
-                        <ul>New User</ul>
+                    <div className="userNav">
+                    <ul><Link to={"/user"}>New User</Link></ul>
+                    <ul><Link to={"/test"}>Test</Link></ul>
 
                     </div>
                </div>
