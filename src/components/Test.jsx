@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./assets/Test.css" 
-//const name = "Rabiul islam"
+const name = "Bangladesh"
 
 class Test extends Component {
 
@@ -32,11 +32,11 @@ class Test extends Component {
     render() {
         return (
             <div className='test'> 
-            <h1>I am from Test</h1>
+            <h1>I am from {name}</h1>
             
             </div>
         );
     }
 }
-
+ 
 export default Test;

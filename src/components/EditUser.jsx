@@ -1,11 +1,14 @@
 import "./assets/User.css" 
 import React, {useState} from "react";
 import axios  from 'axios';
-import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
+import {Link, useNavigate, useParams } from "react-router-dom";
+import { useEffect } from "react";
 
-function User() {
+
+function EditUser() {
 
   let navigate = useNavigate()
+  const  {id} =useParams()
 
     const [user, setUser]= useState({
 
@@ -14,10 +17,6 @@ function User() {
       password :"",
 
     })
-
-   
-
-
      const {name,email,password} =user;
 
      const onInputChange = (e) =>{
@@ -25,14 +24,22 @@ function User() {
       });
      };
 
+     useEffect(() => {
+        loadUser()
+     }, [])
+
      const onSubmit= async (e)=>{
       e.preventDefault();
-      await axios.post("http://localhost:8080/api/user",user );
+
+      await axios.put(`http://localhost:8080/api/user/${id}`,user );//``dety hoby
       navigate("/")
      
      };
 
-     
+     const loadUser = async () =>{
+        const result =await axios.get(`http://localhost:8080/api/user/${id}`)//`` dety hoby
+        setUser(result.data)
+     }
 
   
   return (
@@ -40,7 +47,7 @@ function User() {
 
         <div className="row">
           <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-            <h2 className="text-center m-4 "> Rergister User</h2><hr className="border border-primary border-3 opacity-75" />
+            <h2 className="text-center m-4 "> Edit User</h2><hr className="border border-primary border-3 opacity-75" />
             <form onSubmit={(e)=> onSubmit(e)}>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">Name  :</label>
@@ -55,14 +62,14 @@ function User() {
               <input type="password" className="form-control" placeholder=" Your Password"  name="password" value={password} onChange={(e)=>onInputChange(e)}/>
             </div>
             <button  className="btn btn-outline-success m-2 " type="submit">Submit</button>
-            <Link to="/" className="btn btn-outline-danger "  >Cancel</Link>
+            <Link to="/" className="btn btn-outline-danger " >Cancel</Link>
             </form>
 
           </div>
-          </div>    
-       
+          </div>  
+      
     </div>
   )
 }
 
-export default User 
+export default EditUser 

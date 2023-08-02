@@ -1,5 +1,19 @@
-.test{
-    background-color: aqua;
-    color: black;
-    text-align: center;
+
+.regtreation{    
+  border-radius: 20px;
+  background-color: aqua;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 400px;
+  
+  
+}
+.User body{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
 }

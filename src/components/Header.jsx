@@ -1,47 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./assets/Header.css"
+import { Home } from './Home'
 
-const name ="Total Patient Number = ";
+// const name ="Total Patient Number = ";
 
 export function Header(props) {   
 
     return (
-
-        <div className='navhead'>
-               <div className="navbar">
-                    <ul><Link to={"/home"}>Home</Link></ul>
-                    <ul><Link to={"/about"}>About</Link></ul>
-                    <ul><Link to={"/contact"}>Contact</Link></ul>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="#">Full Stack Application</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <button className="btn btn-light"><Link to={"/home"}>New User</Link></button>
+                    <button className="btn btn-light"><Link to={"/user"}>New User</Link></button>                         
                     
-
-                    <div className="userNav">
-                    <ul><Link to={"/user"}>New User</Link></ul>
-                    <ul><Link to={"/test"}>Test</Link></ul>
-
-                    </div>
-               </div>
-
-               <table className='tbl'>
-                <thead>
-                    <tr>
-                        <th>Patient Id</th>
-                        <th>Patient Name</th>
-                        <th>Patient Age</th>
-                        <th>Patient NID</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>101</td>
-                        <td>Tanvir hasan</td>
-                        <td>55</td>
-                        <td>12151418</td>
-                    </tr>
-                </tbody>
-               </table>
-               <p>{name}</p>
-
-            </div>
+                </div>
+                
+            </nav>
+            <Home/>
+        </div>
     )
 }
