@@ -32,13 +32,13 @@ function EditUser() {
      const onSubmit= async (e)=>{
       e.preventDefault();
 
-      await axios.put(`http://localhost:8080/api/user/${id}`,user );//``dety hoby
+      await axios.put(`http://localhost:8080/api/user/${id}`,user );//``dety hoby Update
       navigate("/")
      
      };
 
      const loadUser = async () =>{
-        const result =await axios.get(`http://localhost:8080/api/user/${id}`)//`` dety hoby
+        const result =await axios.get(`http://localhost:8080/api/user/${id}`)//`` dety hoby getBy Id
         setUser(result.data)
      }
 

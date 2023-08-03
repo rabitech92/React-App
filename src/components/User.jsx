@@ -1,8 +1,8 @@
 import "./assets/User.css" 
 import React, {Fragment, useState} from "react";
 import axios  from 'axios';
-import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
-import { Header } from "./Header";
+import { Link, useNavigate,  } from "react-router-dom";
+
 
 function User() {
 
@@ -14,9 +14,7 @@ function User() {
       email :"",
       password :"",
 
-    })
-
-   
+    })  
 
 
      const {name,email,password} =user;

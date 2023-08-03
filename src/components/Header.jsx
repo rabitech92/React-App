@@ -20,7 +20,7 @@ export function Header(props) {
                     <span>
                     <select className="form-select-sm mb-3" >
                             <option selected>Open this select menu</option>
-                            <option>Patient</option>
+                            <option><Link to ={"/addPatient"}></Link>Patient</option>
                             <option>Doctor</option>
                         </select>
                         <button className="btn btn-light m-2"><Link to={"/home"}>User List</Link></button>

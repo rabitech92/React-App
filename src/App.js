@@ -11,13 +11,16 @@ import Test from './components/Test';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import EditUser from './components/EditUser';
 import ViewUser from './components/ViewUser';
+import addPatient from './components/patient/addPatient';
+import Main from './components/patient/Main';
 
 function App() {
   return (
     
     <BrowserRouter>
     <Header/>
-      <Routes>        
+      <Routes> 
+        <Route path="/" element={<Main/>}/>       
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/home" element={<Home/>}/>
@@ -26,6 +29,7 @@ function App() {
         <Route path="/test" element={<Test/>}/>
         <Route path="/editUser/:id" element={<EditUser/>}/>
         <Route path="/viewUser/:id" element={<ViewUser/>}/>
+        <Route path="/addPatient" element={<addPatient/>}/>
       </Routes>
       </BrowserRouter>
     
