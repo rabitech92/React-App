@@ -1,8 +1,9 @@
 import "./assets/User.css" 
-import React, {useState} from "react";
+import React, {Fragment, useState} from "react";
 import axios  from 'axios';
 import {Link, useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
+import { Header } from "./Header";
 
 
 function EditUser() {
@@ -43,7 +44,10 @@ function EditUser() {
 
   
   return (
-    <div className='container'>  
+   
+      
+        
+      <div className='container'>  
 
         <div className="row">
           <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
@@ -68,7 +72,9 @@ function EditUser() {
           </div>
           </div>  
       
-    </div>
+      </div>
+    
+
   )
 }
 

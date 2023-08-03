@@ -1,7 +1,8 @@
 import "./assets/User.css" 
-import React, {useState} from "react";
+import React, {Fragment, useState} from "react";
 import axios  from 'axios';
 import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
+import { Header } from "./Header";
 
 function User() {
 
@@ -36,6 +37,9 @@ function User() {
 
   
   return (
+
+    <Fragment>
+      
     <div className='container'>  
 
         <div className="row">
@@ -55,13 +59,15 @@ function User() {
               <input type="password" className="form-control" placeholder=" Your Password"  name="password" value={password} onChange={(e)=>onInputChange(e)}/>
             </div>
             <button  className="btn btn-outline-success m-2 " type="submit">Submit</button>
-            <Link to="/" className="btn btn-outline-danger "  >Cancel</Link>
+            <Link to="/" className="btn btn-outline-danger " >Cancel</Link>
             </form>
 
           </div>
           </div>    
        
     </div>
+    
+    </Fragment>
   )
 }
 

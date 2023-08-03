@@ -5,10 +5,11 @@ import { Link, useParams } from 'react-router-dom';
 
 
 
+
 export function Home() {
 
      const [users, setUsers] = useState([]);
-     const  {id} =useParams()
+     const  {id} =useParams();
      
      useEffect(() => {
         loadUsers();
@@ -29,9 +30,9 @@ export function Home() {
     
     
 
-    return (
-       
-        <div className='container'>
+    return (    
+           
+           <div className='container'>
             
             <div className="py-4">
             <h1 className='list'>User List</h1>
@@ -50,26 +51,24 @@ export function Home() {
                         {
                             users.map((user,index)=> (
                                 <tr>
-                                    <th scope="row" key={index}>{index+1}</th>
+                                    <th scope="row" key={index}>{user.id}</th>
                                     <td>{user.name}</td>
                                     <td>{user.email}</td>
                                     <td>{user.password}</td>
                                     <td>
                                         
-                                        <Link to={`editUser/${user.id}`} className="btn btn-light">Edit</Link>
-                                        <Link to={<viewUser/>} className="btn btn-info">View</Link>
+                                        <Link to={`/editUser/${user.id}`} className="btn btn-light">Edit</Link>
+                                        <Link className="btn btn-primary mx-2" to={`/viewUser/${user.id}`}> View</Link>
                                         <button className="btn btn-danger" onClick={(id) =>deleteUser(user.id)}>Delete</button>
                                     </td>
                                  </tr>
 
                             ))
-
                         }                     
                         
                     </tbody>
                 </table>
-            </div>          
-            
-      </div>
+            </div> 
+        </div>     
     )
 }

@@ -16,8 +16,8 @@ function App() {
   return (
     
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Header/>}/>
+    <Header/>
+      <Routes>        
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/home" element={<Home/>}/>
@@ -25,7 +25,7 @@ function App() {
         <Route path="/user" element={<User/>}/>
         <Route path="/test" element={<Test/>}/>
         <Route path="/editUser/:id" element={<EditUser/>}/>
-        <Route path="/viewUser" element={<ViewUser/>}/>
+        <Route path="/viewUser/:id" element={<ViewUser/>}/>
       </Routes>
       </BrowserRouter>
     
