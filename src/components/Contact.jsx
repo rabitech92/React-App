@@ -1,5 +1,5 @@
 import React from 'react'
-import "./assets/Contact.css"
+
 
 
 export function Contact(props) {

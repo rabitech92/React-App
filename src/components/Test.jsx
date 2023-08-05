@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./assets/Test.css" 
+
 const name = "Bangladesh"
 
 class Test extends Component {

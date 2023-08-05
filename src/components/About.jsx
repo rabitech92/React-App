@@ -1,5 +1,5 @@
 import React from 'react'
-import "./assets/About.css"
+
 
 
 function About(propsRabiul) {

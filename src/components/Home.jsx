@@ -35,7 +35,7 @@ export function Home() {
            <div className='container'>
             
             <div className="py-4">
-            <h1 className='list'>User List</h1>
+            <h1 className='list'>Patient List</h1>
                 <table className="table border shadow">
                    
                     <thead>

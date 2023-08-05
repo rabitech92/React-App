@@ -11,7 +11,6 @@ import Test from './components/Test';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import EditUser from './components/EditUser';
 import ViewUser from './components/ViewUser';
-import addPatient from './components/patient/addPatient';
 import Main from './components/patient/Main';
 
 function App() {

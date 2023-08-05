@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { Fragment, useEffect,useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { Header } from "./Header";
+
 
 export default function ViewUser() {
  
@@ -31,7 +31,7 @@ export default function ViewUser() {
 
           <div className="card">
             <div className="card-header">
-              Details of user id : {user.id}
+              Details of Patient id : {user.id}
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
                   <b>Name :</b>

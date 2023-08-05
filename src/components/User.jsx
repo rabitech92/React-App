@@ -42,7 +42,7 @@ function User() {
 
         <div className="row">
           <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-            <h2 className="text-center m-4 "> Rergister User</h2><hr className="border border-primary border-3 opacity-75" />
+            <h2 className="text-center m-4 "> Rergister Patient</h2><hr className="border border-primary border-3 opacity-75" />
             <form onSubmit={(e)=> onSubmit(e)}>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">Name  :</label>
@@ -57,7 +57,7 @@ function User() {
               <input type="password" className="form-control" placeholder=" Your Password"  name="password" value={password} onChange={(e)=>onInputChange(e)}/>
             </div>
             <button  className="btn btn-outline-success m-2 " type="submit">Submit</button>
-            <Link to="/" className="btn btn-outline-danger " >Cancel</Link>
+            <Link to="/home" className="btn btn-outline-danger " >Cancel</Link>
             </form>
 
           </div>

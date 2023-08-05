@@ -10,8 +10,8 @@ function Main() {
                     <span class="fs-5 d-none d-sm-inline">Menu</span>                    
                 </a>              
                  <hr/>
-                 <ul>Patient</ul>
-                 <ul>Doctor</ul>
+                 <button className="align-items-center p-2 "> Dashboard</button>
+                 
                 
                 <div class="footer pb-4">
                     
