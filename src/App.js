@@ -12,6 +12,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import EditUser from './components/EditUser';
 import ViewUser from './components/ViewUser';
 import Main from './components/patient/Main';
+import RoomMnagment from './components/RoomMnagment';
 
 function App() {
   return (
@@ -29,7 +30,9 @@ function App() {
         <Route path="/editUser/:id" element={<EditUser/>}/>
         <Route path="/viewUser/:id" element={<ViewUser/>}/>
         <Route path="/addPatient" element={<addPatient/>}/>
+        <Route path="/roomManagment" element={<RoomMnagment/>}/>
       </Routes>
+      <Footer/>
       </BrowserRouter>
     
   );
