@@ -32,7 +32,7 @@ export function Home() {
 
     return (    
            
-           <div className='container'>
+           <div className='container-lg p-0'>
             
             <div className="py-4">
             <h1 className='list'>Patient List</h1>

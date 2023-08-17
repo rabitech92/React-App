@@ -13,22 +13,22 @@ class Footer extends Component {
                     </div>            
                     <div>
                         <a  className="text-black m-2 fw-bold">
-                        <i class="fab fa-facebook-f">facebook</i>
+                        <i className="fab fa-facebook-f">facebook</i>
                         </a>
                         <a  className="text-black m-2 fw-bold" >
-                        <i class="fab fa-twitter">twitter</i>
+                        <i className="fab fa-twitter">twitter</i>
                         </a>
                         <a  className="text-black e-2 fw-bold">
-                        <i class="fab fa-google">google</i>
+                        <i className="fab fa-google">google</i>
                         </a>
                         <a  className="text-black m-2 fw-bold">
-                        <i class="fab fa-instagram">instagram</i>
+                        <i className="fab fa-instagram">instagram</i>
                         </a>
                         <a className="text-black m-2 fw-bold">
-                        <i class="fab fa-linkedin">linkedin</i>
+                        <i className="fab fa-linkedin">linkedin</i>
                         </a>
                         <a  className="text-black m-2 fw-bold">
-                        <i class="fab fa-github">github</i>
+                        <i className="fab fa-github">github</i>
                         </a>                        
                     </div>    
                 </section>

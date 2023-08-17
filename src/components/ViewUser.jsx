@@ -24,7 +24,7 @@ export default function ViewUser() {
 
   return ( 
         
-    <div className="container">
+    <div className="container1">
       <div className="row">
         <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
           <h2 className="text-center m-4">User Details</h2>

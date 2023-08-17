@@ -38,11 +38,12 @@ function User() {
 
     <Fragment>
       
-    <div className='container'>  
+    <div className='container-1'>  
 
         <div className="row">
           <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-            <h2 className="text-center m-4 "> Rergister Patient</h2><hr className="border border-primary border-3 opacity-75" />
+            <h2 className="text-center m-4 "> Rergister Patient</h2>
+            <hr className="border border-primary border-3 opacity-75" />
             <form onSubmit={(e)=> onSubmit(e)}>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">Name  :</label>
@@ -58,6 +59,7 @@ function User() {
             </div>
             <button  className="btn btn-outline-success m-2 " type="submit">Submit</button>
             <Link to="/home" className="btn btn-outline-danger " >Cancel</Link>
+            <Link to={"/registrtation"}><p>Are you Registerd?</p></Link>
             </form>
 
           </div>
