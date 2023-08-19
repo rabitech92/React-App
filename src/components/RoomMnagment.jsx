@@ -1,7 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { Switch } from 'antd';
+import { useState } from 'react';
 
-function RoomMnagment() {
+const RoomMnagment=()=> {
+    const [toggul, setToggle] =useState(false);
+    const toggler=()=>{
+      toggul?setToggle(false):setToggle(true);
+    }
   return (
     <div>
         <div className='container-md'> 
@@ -21,8 +27,12 @@ function RoomMnagment() {
                                     <label htmlFor="status" className="form-label">Status  :</label>
                                     <input type="text" className="form-control" placeholder=" Your Status"  name="status" />
                                 </div>
-                                <button  className="btn btn-outline-success m-2 " type="submit">Action</button>
-                                <Link to="/home" className="btn btn-outline-danger " >Cancel</Link>
+                                <Switch onClick={toggler}  className="outline-success m-2 " type="submit"/>
+                                {toggul?<span>Active</span>:<span>No Active</span>}
+                                <div>
+                                    <button className="btn btn-outline-success m-2 " type="submit">Submit</button>
+                                    <Link to="/home" className="btn btn-outline-danger">Cancel</Link>
+                                </div>
                             </form>
                     </div>
                 </div> 

@@ -59,7 +59,7 @@ function User() {
             </div>
             <button  className="btn btn-outline-success m-2 " type="submit">Submit</button>
             <Link to="/home" className="btn btn-outline-danger " >Cancel</Link>
-            <Link to={"/registrtation"}><p>Are you Registerd?</p></Link>
+            <Link to={"/login"}><p>Already Registerd?</p></Link>
             </form>
 
           </div>

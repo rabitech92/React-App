@@ -1,0 +1,141 @@
+main.login_screen {
+    width:100%;
+    height:auto;
+    margin:0;
+    padding:0
+  }
+  .login_page_container {
+    width:100%;
+    max-width:260px;
+    height:auto;
+    margin:0 auto;
+    padding-top:5px
+  }
+  .login_page_title h1 {
+    font-family:Lato;
+    font-style:normal;
+    font-weight:700;
+    font-size:28px;
+    line-height:30px;
+    text-align:center;
+    
+  }
+  .login_page_header {
+    margin-bottom:30px
+  }
+  .login_page_form_header {
+    display:flex;
+    justify-content:space-between;
+    background-color:#fff;
+    width:100%;
+    height:55px;
+    align-items:center;
+    padding:0 11px;
+    box-shadow:0 0 13px #ece0c8;
+    box-sizing:border-box;
+    border-radius:8px 8px 0 0
+  }
+  a.forgot_password_link {
+    font-style:normal;
+    font-weight:500;
+    font-size:14px;
+    line-height:14px;
+    color:#4e96da;
+    text-decoration:none
+    
+  }
+  a.need_help_link {
+    font-style:normal;
+    font-weight:400;
+    font-size:14px;
+    line-height:14px;
+    color:#0c0c0c;
+    text-decoration:none
+  }
+  .login_page_logo_wrapper {
+    width:239px;
+    height:134px;
+    margin:0 auto;
+    display:block
+  }
+  .login_page_form {
+    width:100%;
+    height:auto;
+    background-color:#fff;
+    border-radius:8px
+  }
+  .login_form_input_wrapper {
+    padding:15px
+  }
+  .login_form_control_single label {
+    display:none
+  }
+  .login_form_control_single input[type=password],
+  .login_form_control_single input[type=tel],
+  .login_form_control_single input[type=text] {
+    background:#f5f8f9;
+    border:1px solid transparent;
+    box-sizing:border-box;
+    border-radius:3.06522px;
+    width:100%;
+    height:40px;
+    padding-left:15px;
+    outline:0;
+    color:#111
+  }
+  .login_form_control_single input[type=password]:focus,
+  .login_form_control_single input[type=tel]:focus,
+  .login_form_control_single input[type=text]:focus {
+    border-color:#dbdee0
+  }
+  button.login-form-submit-btn {
+    width:100%;
+    height:36px;
+    color:#fff;
+    font-size:14px;
+    outline:0;
+    border:0;
+    cursor:pointer;
+    border-radius:4px
+  }
+  button.login-form-submit-btn:hover {
+    background:#1ba97d
+  }
+ 
+  .login_form_control_single {
+    padding:8px 0;
+    position:relative
+  }
+  button.password-show-hide-btn {
+    position:absolute;
+    border:0;
+    outline:0;
+    background-color:transparent;
+    right:0;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    cursor:pointer
+  }
+  
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    -webkit-appearance:none;
+    margin:0
+  }
+  input[type=number] {
+    -moz-appearance:textfield;
+    -webkit-appearance:textfield;
+    appearance:textfield
+  }
+  .reg{
+    color: white;
+  }
+
+  .login_request_errors {
+    width:100%;
+    height:auto;
+    background-color:#fff;
+    border-radius:8px;
+    margin-top:6px
+  }

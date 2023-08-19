@@ -13,6 +13,7 @@ import ViewUser from './components/ViewUser';
 import Sidebar from './components/Sidebar';
 import RoomMnagment from './components/RoomMnagment';
 import Login from './components/Login';
+import Practice from './components/Practice';
 
 
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/viewUser/:id" element={<ViewUser/>}/> 
           <Route path="/roomManagment" element={<RoomMnagment/>}/> 
           <Route path="/login" element={<Login/>}/> 
+          <Route path="/practice" element={<Practice/>}/> 
         </Routes>
         </Sidebar>
     <Footer/>

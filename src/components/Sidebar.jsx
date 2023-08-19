@@ -1,5 +1,5 @@
 import { useState,React } from 'react';
-import {FaTh,FaBars,FaUserAlt,FaRegChartBar,FaCommentAlt,FaShoppingBag, FaHospitalSymbol, FaPaintRoller}from "react-icons/fa";
+import {FaTh,FaBars,FaUserAlt,FaRegChartBar,FaCommentAlt,FaShoppingBag, FaHospitalSymbol, FaPaintRoller, FaBlog}from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import "./assets/App.css";
 import { Header } from './Header';
@@ -40,6 +40,11 @@ const Sidebar=({children}) =>{
             icon:<FaHospitalSymbol/>
         },
         {
+            path:"practice",
+            name:"Practice",
+            icon:<FaBlog/>
+        },
+        {
             path:"/user",
             name:"Patient List",
             icon:<FaPaintRoller/>
@@ -53,7 +58,7 @@ const Sidebar=({children}) =>{
         <div className="container expand-lg bg-white">
             <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
                 <div className="top_section">
-                    <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Logo</h1>
+                    <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Menu</h1>
                     <div style={{marginLeft: isOpen ? "50px" : "0px"}} className="bars">
                         <FaBars onClick={toggle}/>
                     </div>
