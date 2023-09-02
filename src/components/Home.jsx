@@ -3,9 +3,6 @@ import "./assets/Home.css";
 import axios from "axios";
 import { Link, useParams } from 'react-router-dom';
 
-
-
-
 export function Home() {
 
      const [users, setUsers] = useState([]);
